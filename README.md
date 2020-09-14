@@ -33,8 +33,15 @@ $ docker run --name postgresql tritoanst/postgresql:latest
 
 # Documents
 
-- bitnami/postgresql: https://hub.docker.com/r/bitnami/postgresql, https://github.com/bitnami/bitnami-docker-postgresql
-- zombodb extension: https://www.zombodb.com/documentation, https://github.com/zombodb/zombodb
+## bitnami/postgresql:
+
+- https://hub.docker.com/r/bitnami/postgresql
+- https://github.com/bitnami/bitnami-docker-postgresql
+
+## zombodb extension:
+
+- https://www.zombodb.com/documentation
+- https://github.com/zombodb/zombodb
 
 # Important Notes:
 
