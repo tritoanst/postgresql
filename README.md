@@ -2,7 +2,7 @@
 
 > [PostgreSQL](http://www.postgresql.org) is an object-relational database management system (ORDBMS) with an emphasis on extensibility and on standards-compliance [[source]](https://en.wikipedia.org/wiki/PostgreSQL).
 
-# how to use
+# How to use?
 
 ```console
 $ docker run --name postgresql tritoanst/postgresql:latest
@@ -10,8 +10,8 @@ $ docker run --name postgresql tritoanst/postgresql:latest
 
 # tritoanst/postgresql
 
-- base on bitnami/postgresql: https://hub.docker.com/r/bitnami/postgresql
-- zombodb extension: https://github.com/zombodb/zombodb
+- Base on bitnami/postgresql: https://hub.docker.com/r/bitnami/postgresql
+- ZomboDB extension: https://github.com/zombodb/zombodb
 
 # Why use this Images?
 
@@ -23,7 +23,7 @@ $ docker run --name postgresql tritoanst/postgresql:latest
 - Based on [minideb](https://github.com/bitnami/minideb) a minimalist Debian based container image which gives you a small base container image and the familiarity of a leading Linux distribution.
 - Bitnami container images are released daily with the latest distribution packages available.
 
-## zombodb extension
+## ZomboDB extension
 
 - ZomboDB brings powerful text-search and analytics features to Postgres by using Elasticsearch as an index type. Its comprehensive query language and SQL functions enable new and creative ways to query your relational data.
 
@@ -38,7 +38,7 @@ $ docker run --name postgresql tritoanst/postgresql:latest
 - https://hub.docker.com/r/bitnami/postgresql
 - https://github.com/bitnami/bitnami-docker-postgresql
 
-## zombodb extension:
+## ZomboDB extension:
 
 - https://www.zombodb.com/documentation
 - https://github.com/zombodb/zombodb
@@ -46,7 +46,7 @@ $ docker run --name postgresql tritoanst/postgresql:latest
 # Important Notes:
 
 - Use default postgresql user "postgres" (for create extension)
-- Use zombodb extension:
+- Use ZomboDB extension:
 
 ```console
 CREATE EXTENSION IF NOT EXISTS zombodb;
