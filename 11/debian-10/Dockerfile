@@ -2,9 +2,6 @@ FROM bitnami/postgresql:11-debian-10
 
 LABEL maintainer="nguyentritoanst@gmail.com"
 
-# version of https://github.com/zombodb/zombodb.git.
-# Commits on Aug 30, 2020
-ENV VERSION_HASH 1ad7011164c74e7ee50b0b40dfe59464e21e013c
 # Build and install zombodb extension
 USER root
 # use for zombodb extension
@@ -12,7 +9,6 @@ RUN apt-get update && apt-get upgrade -y && \
   apt-get install -y gcc make build-essential libz-dev zlib1g-dev strace git libcurl4-gnutls-dev && \
   git clone --depth 1 https://github.com/zombodb/zombodb.git && \
   cd zombodb && \
-  git checkout $VERSION_HASH && \
   make && \
   make install && \
   cd .. && \
